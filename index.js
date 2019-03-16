@@ -145,7 +145,12 @@ bot.on('message', message => {
 		message.author.send("Ensuite ouvrez SublimeText et créez un fichier, sauvegardez le dans le dossier du bot avec `Ctrl+shift+s` et nommez le index.js")
 		message.author.send("Vous pouvez donc commencer votre code")
 		message.author.send("Dans le code, inscrivez\n```const Discord = require('discord.js');\nconst bot = new Discord.Client();\n```")
+
 	}
+
+	if(message.content === prefix + "l5.bot"{
+		message.channel.send("`Cours INDISPONIBLE`")
+	})
 
 })
 // Bot (Fin)
