@@ -29,6 +29,7 @@ bot.on('message', message => {
 		.setColor("#f92727")
 		.setTitle("Page d'aide")
 		.addField("Commandes", "c/pr - Affiche les prérequis de la programmation\nc/hist - Affiche l'histoire de la programmation\nc/java - Apprend le Java\nc/bot - Apprend à coder un bot")
+		.setFooter(`${client.user.username} | ${message.guild.name} | ${message.author.username}`)
 		message.channel.send(help_embed);
 	}
 })
@@ -60,7 +61,7 @@ bot.on('message', message => {
 		var java_embed = new Discord.RichEmbed()
 		.setTitle("Commandes Java :")
 		.addField("c/l1.java", "Première leçon de Java")
-		.addField("c/l2.java", "Deuxième leçon de Java `INDISPONIBLE`")
+		.setFooter(`${client.user.username} | ${message.guild.name} | ${message.author.username}`)
 		message.channel.send(java_embed);
 	}
 })
@@ -89,6 +90,7 @@ bot.on('message', message => {
 		var bot_embed = new Discord.RichEmbed()
 		.setTitle("Créer un bot")
 		.addField("Commandes", "c/l1.bot - Premier cour pour apprendre à créer un bot\nc/l2.bot - Deuxième cours pour apprendre à créer un bot\nc/l3.bot - Troisième cours pour apprendre à créer un bot\nc/l4.bot - Quatrième cours pour apprendre à créer un bot `INDISPONIBLE`")
+		.setFooter(`${client.user.username} | ${message.guild.name} | ${message.author.username}`)
 		message.channel.send(bot_embed);
 	}
 
