@@ -148,7 +148,7 @@ bot.on('message', message => {
 
 	}
 
-	if(message.content === prefix + "l5.bot"{
+	if(message.content === prefix + "l5.bot"){
 		message.channel.send("`Cours INDISPONIBLE`")
 	})
 
