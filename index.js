@@ -60,7 +60,7 @@ bot.on('message', message => {
 		var java_embed = new Discord.RichEmbed()
 		.setTitle("Commandes Java :")
 		.addField("c/l1.java", "Première leçon de Java\n")
-		.addFeild("c/l2.java - Deuxième leçon de Java `INDISPONIBLE`")
+		.addField("c/l2.java - Deuxième leçon de Java `INDISPONIBLE`")
 		message.channel.send(java_embed);
 	}
 })
