@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 var prefix = "c/";
 
-bot.login("NTU0MDMxMzA4MTU0NjAxNDg1.D2WupQ.uc8gw0FTxI9L6PAtDEXqu2ltV1k")
+bot.login(process.env.TOKEN)
 
 
 bot.on('ready', () => {
