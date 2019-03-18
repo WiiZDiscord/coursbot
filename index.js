@@ -50,7 +50,7 @@ bot.on("message", message => {
 // Prérequis
 bot.on('message', message => {
 	if(message.content === prefix + "pr"){
-		message.author.send("Voici les prérequis :\n\n\nUn logiciel te permettant d'écrire le code (Je te conseille Sublime Text qui est 100% mais il en existe d'autre égallement que tu peux trouver sur internet)")
+		message.author.send("Voici les prérequis :\n\n\n__**Pourn Ecrire Ton Code**__\nJe te conseille **Sublime Text** qui est 100% gratuit mais il en existe d'autre égallement que tu peux trouver sur internet comme **Visual Studio Code**\n\n__**Au Niveau Du Language**__\nTu n'as besoin d'aucune compétance de base puisque nous allons apprendre ensemble à coder")
 	}
 })
 // Prérequis (Fin)
