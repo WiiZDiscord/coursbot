@@ -52,6 +52,13 @@ bot.on('message', message => {
 	if(message.content === prefix + "pr"){
 		message.author.send("Voici les prérequis :\n\n\n__**Pourn Ecrire Ton Code**__\nJe te conseille **Sublime Text** qui est 100% gratuit mais il en existe d'autre égallement que tu peux trouver sur internet comme **Visual Studio Code**\n\n__**Au Niveau Du Language**__\nTu n'as besoin d'aucune compétance de base puisque nous allons apprendre ensemble à coder")
 	}
+	if(message.content === prefix + "merci"){
+		var thx_embed = new Discord.RichEmbed()
+		.setTitle("Merci A:")
+		.setColor("RANDOM")
+		.addField("Paul Et Victor", "Pour le cours sur les bots discord\nLien vers leur chaine:\nhttps://www.youtube.com/channel/UCqTzzB0UIGVoul9UdFUbGXQ")
+		.addField("Graven", "Pour le cours sur Java et Python`PROCHAINEMENT`\nLien vers sa chaine:\nhttps://www.youtube.com/channel/UCIHVyohXw6j2T-83-uLngEg")
+	}
 })
 // Prérequis (Fin)
 // Java (Début)
@@ -60,23 +67,83 @@ bot.on('message', message => {
 		var java_embed = new Discord.RichEmbed()
 		.setTitle("Commandes Java :")
 		.addField("c/l1.java", "Première leçon de Java")
+		.addField("c/l2.java", "Deuxième leçon de Java")
+		message.channel.send("Vous pouvez continuer la commande c/l`..`.java jusqu'au nombre 18 :wink:")
 		message.channel.send(java_embed);
 	}
 })
 bot.on('message', message => {
 
 	if(message.content === prefix + 'l1.java'){
-		message.author.send("Introduction au Java")
-		message.author.send("Commencont par écrire un programme simple qui va dire 'Hello World'")
-		message.author.send("Tout d'abord il te faut ouvrir ton logiciel qui te permettra d'écrire ton programme")
-		message.author.send("Une fois ceci fait, crée un nouveau fichier et nomme le 'Main.java' cela permettra a ton logiciel de savoir que tu écris en Java")
-		message.author.send("Commencont le code:\n\n```java\nclass MyClass {\n 		public static void main(String[ ] args) {\n 			System.out.println('Hello World !');\n 		}\n}```")
-		message.author.send("Impréssionant non ?\nEt ce n'est que le début !")
-
+		message.author.send("Apprendre le java#1 - les bases et prérequis\nhttps://www.youtube.com/watch?v=XgVADKKb4jI&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=2&t=0s")
 	}
 
 	if(message.content === prefix + "l2.java"){
-		message.author.send("prochaine leçon bientot !")
+		message.author.send("Apprendre le java#2 - LES variables\nhttps://www.youtube.com/watch?v=SvPGiy5UXRI&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=3&t=0s")
+	}
+
+	if(message.content === prefix + "l3.java"){
+		message.author.send("Apprendre le java#3 - LES CONDITIONS\nhttps://www.youtube.com/watch?v=BMpLLJtt2ys&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=4&t=0s")
+	}
+
+	if(message.content === prefix + "l4.java"){
+		message.author.send("APPRENDRE LE JAVA#4 - LES TABLEAUX\nhttps://www.youtube.com/watch?v=rvjAPI89QnE&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=5&t=0s")
+	}
+
+	if(message.content === prefix + "l5.java"){
+		message.author.send("APPRENDRE LE JAVA#5 - LES BOUCLES (FOR, FOREACH, WHILE..)\nhttps://www.youtube.com/watch?v=oHOXE9h3t_A&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=6&t=0s")
+	}
+
+	if(message.content === prefix + "l6.java"){
+		message.author.send("APPRENDRE LE JAVA#6 - LES FONCTIONS\nhttps://www.youtube.com/watch?v=rJx9Q-aYuAA&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=7&t=0s")
+	}
+
+	if(message.content === prefix + "l7.java"){
+		message.author.send("APPRENDRE LE JAVA#7 - LES OBJETS\nhttps://www.youtube.com/watch?v=IvHUljLP3NY&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=8&t=0s")
+	}
+
+	if(message.content === prefix + "l8.java"){
+		message.author.send("APPRENDRE LE JAVA#8 - L'HERITAGE 1/2\nhttps://www.youtube.com/watch?v=gdHOsaGBbPA&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=9&t=0s")
+	}
+
+	if(message.content === prefix + "l9.java"){
+		message.author.send("APPRENDRE LE JAVA#9 - LES INTERACES - L'HERITAGE 2/2\nhttps://www.youtube.com/watch?v=ymRGWkyrFnI&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=10&t=0s")
+	}
+
+	if(message.content === prefix + "l10.java"){
+		message.author.send("APPRENDRE LE JAVA#10 - LES ENUMERATIONS\nhttps://www.youtube.com/watch?v=pbAkJiz-DNU&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=11&t=0s")
+	}
+
+	if(message.content === prefix + "l11.java"){
+		message.author.send("APPRENDRE LE JAVA#11 - LES ARRAYLISTS\nhttps://www.youtube.com/watch?v=w56ZbRlnyDg&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=12&t=0s")
+	}
+
+	if(message.content === prefix + "l12.java"){
+		message.author.send("APPRENDRE LE JAVA#12 - LES HASHMAPS\nhttps://www.youtube.com/watch?v=FGU-imprdKs&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=13&t=0s")
+	}
+
+	if(message.content === prefix + "l13.java"){
+		message.author.send("APPRENDRE LE JAVA#13 - LES EXCEPTIONS\nhttps://www.youtube.com/watch?v=1gOb77oouUQ&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=14&t=0s")
+	}
+
+	if(message.content === prefix + "l15.java"){
+		message.author.send("APPRENDRE LE JAVA#15 - LES FICHIERS\nhttps://www.youtube.com/watch?v=7hZVRDxpbCE&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=16&t=0s")
+	}
+
+	if(message.content === prefix + "l14.java"){
+		message.author.send("APPRENDRE LE JAVA#14 - LES CHRONOMETRES\nhttps://www.youtube.com/watch?v=He1Pvyewr_M&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=15&t=0s")
+	}
+
+	if(message.content === prefix + "l16.java"){
+		message.author.send("APPRENDRE LE JAVA#16 - LES CALLBACKS\nhttps://www.youtube.com/watch?v=_IwGb_hYMuY&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=18&t=0s")
+	}
+
+	if(message.content === prefix + "l17.java"){
+		message.author.send("APPRENDRE LE JAVA#17 - LA SURCHARGE\nhttps://www.youtube.com/watch?v=qWb_DsW0q2g&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM&index=19&t=0s")
+	}
+
+	if(message.content === prefix + "l18.java"){
+		message.author.send("APPRENDRE LE JAVA#18 - LA GENERECITE\nhttps://www.youtube.com/watch?v=qWb_DsW0q2g&t=0s&index=19&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM")
 	}
 
 })
@@ -155,3 +222,14 @@ bot.on('message', message => {
 })
 // Bot (Fin)
 // COMMANDES (FIN)
+
+bot.on('message', message => {
+	if(message.content === prefix + "help"){
+		var help_embed = new Discord.RichEmbed()
+		.setTitle("Page D'aide")
+		.setColor("#f92727")
+		.addField("Commandes du bot", "1e commande\n2eme commande\n3e commande...")
+		.setFooter(`${client.user.username} | ${message.guild.name} | ${message.author.username}`)
+		message.channel.send(help_embed);
+	}
+})
