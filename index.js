@@ -28,7 +28,7 @@ bot.on('message', message => {
 		var help_embed = new Discord.RichEmbed()
 		.setColor("#f92727")
 		.setTitle("Page d'aide")
-		.addField("Commandes", "c/pr - Affiche les prérequis de la programmation\nc/hist - Affiche l'histoire de la programmation\nc/java - Apprend le Java\nc/bot - Apprend à coder un bot")
+		.addField("Commandes", "c/pr - Affiche les prérequis de la programmation\nc/hist - Affiche l'histoire de la programmation\nc/java - Apprend le Java\nc/bot - Apprend à coder un bot\nc/merci - Affiche les remerciement pour les cours")
 		message.channel.send(help_embed);
 	}
 })
@@ -223,14 +223,3 @@ bot.on('message', message => {
 })
 // Bot (Fin)
 // COMMANDES (FIN)
-
-bot.on('message', message => {
-	if(message.content === prefix + "help"){
-		var help_embed = new Discord.RichEmbed()
-		.setTitle("Page D'aide")
-		.setColor("#f92727")
-		.addField("Commandes du bot", "1e commande\n2eme commande\n3e commande...")
-		.setFooter(`${client.user.username} | ${message.guild.name} | ${message.author.username}`)
-		message.channel.send(help_embed);
-	}
-})
