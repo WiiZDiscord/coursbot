@@ -68,7 +68,7 @@ bot.on('message', message => {
 		.setTitle("Commandes Java :")
 		.addField("c/l1.java", "Première leçon de Java")
 		.addField("c/l2.java", "Deuxième leçon de Java")
-		message.channel.send("Vous pouvez continuer la commande c/l`..`.java jusqu'au nombre 18 :wink:")
+		.addField("Conseil", "Vous pouvez continuer la commande 'c/l`..`.java jusqu'au nombre 18 :wink:")
 		message.channel.send(java_embed);
 	}
 })
