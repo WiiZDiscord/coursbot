@@ -58,6 +58,7 @@ bot.on('message', message => {
 		.setColor("RANDOM")
 		.addField("Paul Et Victor", "Pour le cours sur les bots discord\nLien vers leur chaine:\nhttps://www.youtube.com/channel/UCqTzzB0UIGVoul9UdFUbGXQ")
 		.addField("Graven", "Pour le cours sur Java et Python`PROCHAINEMENT`\nLien vers sa chaine:\nhttps://www.youtube.com/channel/UCIHVyohXw6j2T-83-uLngEg")
+		message.channel.send(thx_embed);
 	}
 })
 // Prérequis (Fin)
