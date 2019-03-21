@@ -203,6 +203,7 @@ bot.on('message', message =>{
 		var python_embed = new Discord.RichEmbed()
 		.setTitle("Coder en python")
 		.addField("Commandes", "c/l1.py - Premier cour de python\nc/l2.py - Deuxième cours de python\nc/l3.py - Troisième cours de python\nc/l4.py - Quatrième cours de python\nc/l5.py - Cinquième cours de python\nc/l6.py - Sixième cours de python\nc/l7.py - Septième cours de python\nc/l8.py - Huitième cours de python\nc/l9.py - Neuvième cours de python")
+		message.channel.send(python_embed);
 	}
 
 	if(message.content === prefix + "l1.py"){
