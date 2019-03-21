@@ -28,7 +28,7 @@ bot.on('message', message => {
 		var help_embed = new Discord.RichEmbed()
 		.setColor("#f92727")
 		.setTitle("Page d'aide")
-		.addField("Commandes", "c/pr - Affiche les prérequis de la programmation\nc/hist - Affiche l'histoire de la programmation\nc/java - Apprend le Java\nc/bot - Apprend à coder un bot\nc/merci - Affiche les remerciement pour les cours")
+		.addField("Commandes", "c/pr - Affiche les prérequis de la programmation\nc/hist - Affiche l'histoire de la programmation\nc/java - Apprend le Java\nc/bot - Apprend à coder un bot\nc/python - Apprend à coder en pyton\nc/merci - Affiche les remerciement pour les cours")
 		message.channel.send(help_embed);
 	}
 })
@@ -47,6 +47,9 @@ bot.on("message", message => {
 	}
 })
 // Fin (Histoire du programmage)
+
+
+
 // Prérequis
 bot.on('message', message => {
 	if(message.content === prefix + "pr"){
@@ -62,6 +65,9 @@ bot.on('message', message => {
 	}
 })
 // Prérequis (Fin)
+
+
+
 // Java (Début)
 bot.on('message', message => {
 	if(message.content === prefix + "java"){
@@ -149,71 +155,37 @@ bot.on('message', message => {
 
 })
 // Java (Fin)
+
+
+
 // Bot (Début)
 bot.on('message', message => {
 	
 	if(message.content === prefix + "bot"){
 		var bot_embed = new Discord.RichEmbed()
 		.setTitle("Créer un bot")
-		.addField("Commandes", "c/l1.bot - Premier cour pour apprendre à créer un bot\nc/l2.bot - Deuxième cours pour apprendre à créer un bot\nc/l3.bot - Troisième cours pour apprendre à créer un bot\nc/l4.bot - Quatrième cours pour apprendre à créer un bot `INDISPONIBLE`")
+		.addField("Commandes", "c/l1.bot - Premier cour pour apprendre à créer un bot\nc/l2.bot - Deuxième cours pour apprendre à créer un bot\nc/l3.bot - Troisième cours pour apprendre à créer un bot\nc/l4.bot - Quatrième cours pour apprendre à créer un bot\nc/l5.bot - Cinquième cours pour apprendre à créer un bot")
 		message.channel.send(bot_embed);
 	}
 
 	if(message.content === prefix + "l1.bot"){
-		message.author.send("```Premier cour pour apprendre à créer un bot")
-		message.author.send("\n\nBonjour, vous voici dans le premier cours pour apprendre à coder un bot\n dans ce cours je vais vous apprendre à coder un bot")
-		message.author.send("Des bots tu en voit dans quasiment chaque serveur discord, si pas dans chaque.")
-		message.author.send("\n\nPour commencer (Si c'est pas fait) installe `NodeJS` (Lien de téléchargement)[https://nodejs.org/fr/]")
-		message.author.send("Ensuite, tu peux (Si c'est pas fait) installer `Sublime Text` (Lien de téléchargement)[https://www.sublimetext.com/3]")
-		message.author.send("Une fois NodeJS installé, clique sur ton menu windows ou sur 'Cortana' et cherche `NodeJS Command Prompt`")
-		message.author.send("Voilà, désormais tu es prêt pour la partie N°2 du cours !\nc/l2.bot")
-
+		message.author.send("Créer un bot discord - Creation + Mise en ligne #1\nhttps://www.youtube.com/watch?v=FMijzVzh4MQ")
 	}
 
 	if(message.content === prefix + "l2.bot"){
-		message.author.send("Deuxième cours pour apprendre à créer un bot")
-		message.author.send("Bonjour, vous voici dans le deuxième cours pour apprendre à coder un bot\ndans ce cours je vais vous apprendre à créer votre bot")
-		message.author.send("Pour commencer rends toi sur https://discordapp.com/developers/applications/")
-		message.author.send("Ensuite clique sur (Si c'est en anglais) `New Application` ou (Si c'est en français `Nouvelle application`")
-		message.author.send("Une fois que tu à cliqué, tu peux nommer ton bot, regarder son ID,.. Nous ici on vas juste se charger de nommer son bot")
-		message.author.send("Pour ma part je vais le nommer `tuto bot`")
-		message.author.send("Une fois nommé, tu vas cliquer sur `Bot` qui se trouve à gauche de ton écran")
-		message.author.send("Tu vas ensuite cliquer sur (Si c'est en englais) `Add Bot` ou (Si c'est en français) `Ajouter un bot`, ensuite sur `Yes, Do It` ou `Oui, le faire`")
-		message.author.send("Voilà, dans ce tuto tu as appris à créer ton bot, dans la leçon N°3 nous allons apprendre à ajouter notre bot sur vôtre serveur")
-		message.author.send("Voilà, désormais tu es prêt pour la partie N°3 du cours !\nc/l3.bot")
-
+		message.author.send("Créer un bot discord - Structure\nhttps://www.youtube.com/watch?v=NTsPVuoXHdQ")
 	}
 
 	if(message.content === prefix + "l3.bot"){
-		message.author.send("Troisième cours pour apprendre à créer un bot")
-		message.author.send("Bonjour, vous voici dans le troisième cours pour apprendre à coder un bot\ndans ce cours je vais vous apprendre à ajouter votre bot sur vôtre serveur")
-		message.author.send("Commencont par nous rendre sur https://discordapp.com/developers/applications/")
-		message.author.send("Cliquez ensuite sur le bot que vous avez créer dans le tuto précédent")
-		message.author.send("Ensuite vous verrez `Client ID` vous copiez la ligne correspondant à l'ID de votre bot")
-		message.author.send("Rendez vous ensuite sur https://discordapi.com/permissions.html")
-		message.author.send("Si vous souhaitez que vôtre bot aie toutes les permissions y compris les droits d'administrateur cliquez sur toute les cases ou sur `administrator` uniquement")
-		message.author.send("Une fois cela fait, en bas de la page (Là où il est indiqué `Client ID:`) vous devrez coller l'ID de votre bot")
-		message.author.send("Quand vous aurez collé l'ID de vôtre bot un lien apparaitra en bas de la page, cliquez dessus.")
-		message.author.send("Ajouter donc votre bot au serveur de votre choix et cliquez sur `Autoriser`")
-		message.author.send("Voilà, ce tuto est terminé, dans la leçon N°4 nous allons apprendre à allumer le bot")
-		message.author.send("Voilà, désormais tu es prêt à accèder à la partie N°4 du cours\nc/l3.bot")
-
+		message.author.send("Créer un bot discord - Ping + Statistiques#3\nhttps://www.youtube.com/watch?v=docip3RjZD8")
 	}
 
 	if(message.content === prefix + "l4.bot"){
-		message.author.send("Quatrième cours pour apprendre à créer un bot")
-		message.author.send("Bonjour, vous voici dans le quatrième cours pour apprendre à coder un bot\n dans ce cours je vais vous apprendre à allumer votre bot sur vôtre serveur")
-		message.author.send("Commencont par finaliser la création du bot")
-		message.author.send("Crée un dossier sur ton bureau ou dans tes documents et nomme le avec le nom de ton bot, pour plus de facilité n'ajoute pas de majuscules")
-		message.author.send("Ensuite ouvre ton menu Windows ou clique directement sur Cortana et cherche Node Command Propmt")
-		message.author.send("Une fois ouvert, tape `cd destination_de_ton_dossier npm init`")
-		message.author.send("Vous pouvez passer tout le texte qui va suivre en appuyant sur le bouton Entrer de votre clavier")
-		message.author.send("Ensuite, tapez `npm install discord.js`")
-		message.author.send("Une fois fini vous pouvez fermer la fenêtre")
-		message.author.send("Ensuite ouvrez SublimeText et créez un fichier, sauvegardez le dans le dossier du bot avec `Ctrl+shift+s` et nommez le index.js")
-		message.author.send("Vous pouvez donc commencer votre code")
-		message.author.send("Dans le code, inscrivez\n```const Discord = require('discord.js');\nconst bot = new Discord.Client();\n```")
+		message.author.send("Créer un bot discord - Kick + Ban#4\nhttps://www.youtube.com/watch?v=oswuq_zrPnQ")
+	}
 
+	if(message.content === prefix + "l5.bot"){
+		message.author.send("Créer un bot discord - Clear#5\nhttps://www.youtube.com/watch?v=UMZPpW_HvOE")
 	}
 
 	if(message.content === prefix + "l5.bot"){
@@ -222,4 +194,52 @@ bot.on('message', message => {
 
 })
 // Bot (Fin)
+
+
+
+// Python (Début)
+bot.on('message', message =>{
+	if(message.content === prefix + "python"){
+		var python_embed = new Discord.RichEmbed()
+		.setTitle("Coder en python")
+		.addField("Commandes", "c/l1.py - Premier cour de python\nc/l2.py - Deuxième cours de python\nc/l3.py - Troisième cours de python\nc/l4.py - Quatrième cours de python\nc/l5.py - Cinquième cours de python\nc/l6.py - Sixième cours de python\nc/l7.py - Septième cours de python\nc/l8.py - Huitième cours de python\nc/l9.py - Neuvième cours de python")
+	}
+
+	if(message.content === prefix + "l1.py"){
+		message.author.send("APPRENDRE LE PYTHON #1 ? LES BASES & PREREQUIS\nhttps://www.youtube.com/watch?v=psaDHhZ0cPs&index=2&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s")
+	}
+
+	if(message.content === prefix + "l2.py"){
+		message.author.send("APPRENDRE LE PYTHON #2 ? LES VARIABLES\nhttps://www.youtube.com/watch?v=nvyX8JfoOWY&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&index=3&t=0s")
+	}
+
+	if(message.content === prefix + "l3.py"){
+		message.author.send("APPRENDRE LE PYTHON #3 ? LES CONDITIONS\nhttps://www.youtube.com/watch?v=_AgUOsvMt8s&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&index=4&t=0s")
+	}
+
+	if(message.content === prefix + "l4.py"){
+		message.author.send("APPRENDRE LE PYTHON #4 ? LES LISTES\nhttps://www.youtube.com/watch?v=kyxF5eH3Kic&index=5&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s")
+	}
+
+	if(message.content === prefix + "l5.py"){
+		message.author.send("APPRENDRE LE PYTHON #5 ? LES BOUCLES\nhttps://www.youtube.com/watch?v=BrknhzrHm8w&index=6&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s")
+	}
+
+	if(message.content === prefix + "l6.py"){
+		message.author.send("APPRENDRE LE PYTHON #6 ? LES FONCTIONS\nhttps://www.youtube.com/watch?v=sgJt64iTOYM&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&index=7&t=0s")
+	}
+
+	if(message.content === prefix + "l7.py"){
+		message.author.send("APPRENDRE LE PYTHON #7 ? LES OBJETS\nhttps://www.youtube.com/watch?v=dfUM_9xibf8&index=8&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s")
+	}
+
+	if(message.content === prefix + "l8.py"){
+		message.author.send("APPRENDRE LE PYTHON #8 ? L'HERITAGE\nhttps://www.youtube.com/watch?v=fW4818AS88I&index=9&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s")
+	}
+
+	if(message.content === prefix + "l9.py"){
+		message.author.send("APPRENDRE LE PYTHON #9 ? INTERFACE GRAPHIQUE (avec Tkinter)\nhttps://www.youtube.com/watch?v=N4M4W7JPOL4&index=10&list=PLMS9Cy4Enq5JmIZtKE5OHJCI3jZfpASbR&t=0s ")
+	}
+})
+// Python (Fin)
 // COMMANDES (FIN)
