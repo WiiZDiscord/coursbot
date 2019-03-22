@@ -13,13 +13,13 @@ bot.on('ready', () => {
 	bot.user.setGame("c/help | School Of Coding")
 })
 
-client.on('guildMemberAdd', member => {
+bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === '𝐵𝒾𝑒𝓃𝓋𝑒𝓃𝓊𝑒');
   if(!channel) return;
   channel.send(`**[+]** Bienvenue **${member}** sur le serveur !`)
 })
 
-client.on('guildMemberRemove', member => {
+bot.on('guildMemberRemove', member => {
   const channel = member.guild.channels.find(ch => ch.name === '𝐵𝓎𝑒-𝐵𝓎𝑒');
   if(!channel) return;
   channel.send(`**[-]** **${member}** nous a quittés !`)
